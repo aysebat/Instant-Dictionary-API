@@ -5,7 +5,8 @@ class Doc:
 
     def serve(self):
         wp = jp.WebPage()
-        mainDiv = jp.Div(a=wp, classes="bg-gray-100 h-screen font-mono")
+        mainDiv = jp.Div(a=wp,
+                         classes="bg-gray-100 h-screen font-mono")
 
         jp.Div(a=mainDiv,
                text="Instant Dictionary API",

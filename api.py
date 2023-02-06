@@ -10,7 +10,7 @@ class Api:
     @classmethod
     def serve(cls, req):
         wp = jp.WebPage()
-        #getting teh word from the URL
+        #getting the word from the URL
         word = req.query_params.get('w')
 
         defined = definition.Definition(word).get()

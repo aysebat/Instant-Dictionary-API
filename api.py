@@ -9,7 +9,7 @@ class Api:
 
     @classmethod
     def serve(cls, req):
-        wp = jp.WebPage()
+        wp = jp.WebPage(classes="font-mono")
         #getting the word from the URL
         word = req.query_params.get('w')
 
